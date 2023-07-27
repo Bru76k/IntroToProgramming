@@ -1,0 +1,27 @@
+import json, requests
+
+base_url = "https://api.openweathermap.org/data/2.5/weather"
+appid = "906b6939735602a519447e37a839d229"
+city = "Chicago"
+
+url = f"{base_url}?q={city}&units=imperial&APPID={appid}"
+print(url)
+print ()
+
+response = requests.get(url)
+unformated_data = response.json()
+
+# print(unformated_data)
+
+temp = unformated_data["main"]["temp"]
+print(f"The current temp is: {temp}")
+
+temp_max = unformated_data["main"]["temp_max"]
+print(f"The max temp is: {temp_max}")
+
+# Create a Python Application which asks the user for their zip code or city.
+# Use the zip code or city name in order to obtain the weather forecast
+# Use functions including a main function.
+# Allow the user to run the program multiple times.
+# Validate whether the user entered valid date. If valid data isn't presented, notify the user.
+# Use try blocks when establishing connections to the webservice. You must print a message to the user indicating whether or not the connection was successful.
