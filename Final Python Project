@@ -14,7 +14,7 @@ unformated_data = response.json()
 # print(unformated_data)
 
 temp = unformated_data["main"]["temp"]
-print(f"The current temp is: {temp}")
+print(f"Current temperature is: {temp}")
 
 temp_max = unformated_data["main"]["temp_max"]
 print(f"The max temp is: {temp_max}")
