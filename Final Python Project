@@ -19,6 +19,7 @@ print(f"Current temperature is: {temp}")
 temp_max = unformated_data["main"]["temp_max"]
 print(f"The max temp is: {temp_max}")
 
+#thank you for sharing
 # Create a Python Application which asks the user for their zip code or city.
 # Use the zip code or city name in order to obtain the weather forecast
 # Use functions including a main function.
